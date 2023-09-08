@@ -11,7 +11,7 @@ const Home: React.FC = () => {
       >
         +
       </button>
-      <div data-testid="counter">Counter: {`${counter}`}</div>
+      <div data-testid="counter">Counter No.: {`${counter}`}</div>
       <button
         data-testid="decrement"
         onClick={() => setCounter((pre) => pre - 1)}
