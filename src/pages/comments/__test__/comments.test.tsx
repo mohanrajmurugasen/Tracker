@@ -11,7 +11,7 @@ const dummyData = [
     body: "laudantium enim quasi est quidem magnam voluptate ipsam eos\ntempora quo necessitatibus",
   },
   {
-    postId: 1,
+    postId: 2,
     id: 2,
     name: "quo vero reiciendis velit similique earum",
     email: "Jayne_Kuhic@sydney.com",
