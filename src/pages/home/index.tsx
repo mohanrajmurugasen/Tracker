@@ -2,6 +2,7 @@ import React, { useState } from "react";
 
 const Home: React.FC = () => {
   const [counter, setCounter] = useState<number>(0);
+
   return (
     <div className="counter">
       <button

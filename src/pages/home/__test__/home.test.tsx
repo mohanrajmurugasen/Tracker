@@ -1,5 +1,6 @@
 import { render, fireEvent, screen } from "@testing-library/react";
 import Home from "../index";
+import renderer from "react-test-renderer";
 
 describe("Counter", () => {
   test("Increment", () => {
@@ -22,5 +23,13 @@ describe("Counter", () => {
     fireEvent.click(decrement);
 
     expect(counter).toHaveTextContent("Counter: -1");
+  });
+
+  test("Snapshot", () => {
+    render(<Home />);
+
+    const tree = renderer.create(<Home />).toJSON();
+
+    expect(tree).toMatchSnapshot();
   });
 });
